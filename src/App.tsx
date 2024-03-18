@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -28,6 +29,16 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+=======
+import NavBar from "@/components/NavBar.tsx";
+import './App.css'
+
+function App() {
+
+  return (
+    <>
+        <NavBar></NavBar>
+>>>>>>> 72ddf62155cb5920ed3be279578f9ffab3cc67c5
     </>
   )
 }
