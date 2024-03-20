@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-# EventSpot
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# EventSpot
-=======
-<<<<<<< HEAD
-# EventSpot
-=======
-=======
-
->>>>>>> 72ddf62155cb5920ed3be279578f9ffab3cc67c5
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
