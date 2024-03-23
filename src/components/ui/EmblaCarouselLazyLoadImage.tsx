@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import '../../stylesheets/embla.css'
+import {Button} from "@/components/ui/button.tsx";
 const PLACEHOLDER_SRC = `data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D`
 
 type PropType = {
@@ -28,7 +29,7 @@ export const LazyLoadImage: React.FC<PropType> = (props) => {
 			>
 				{!hasLoaded && <span className="embla__lazy-load__spinner" />}
 				<img
-					className="embla__slide__img embla__lazy-load__img "
+					className="embla__slide__img embla__lazy-load__img rounded-3xl"
 					onLoad={setLoaded}
 					src={inView ? imgSrc : PLACEHOLDER_SRC}
 					alt="Your alt text"
@@ -52,9 +53,14 @@ export const LazyLoadImage: React.FC<PropType> = (props) => {
 							<span className="text-white text-sm">ENSAH</span>
 						</div>
 					</div>
-					<button className="px-4 py-3  bg-color-blue-primary  rounded-full w-48 text-white">
-						Explore
-					</button>
+					<Button variant="outline" className={"group flex gap-x-1.5 mt-4 md:mt-6 py-6 px-9 text-md text-white hover:text-white bg-color-primary hover:bg-color-primary-hover border-0 rounded-full z-20"}>
+						<span>Explore</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20" fill="currentColor" className="w-4 h-4 group-hover:translate-x-0.5 transition">
+							<path fillRule="evenodd"
+							      d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+							      clipRule="evenodd"/>
+						</svg>
+					</Button>
 				</div>
 			</div>
 		</div>

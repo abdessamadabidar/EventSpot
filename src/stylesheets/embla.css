@@ -20,7 +20,6 @@
     padding-left: var(--slide-spacing);
 }
 .embla__slide__img {
-    border-radius: 1.8rem;
     display: block;
     height: var(--slide-height);
     width: 100%;

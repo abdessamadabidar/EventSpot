@@ -42,7 +42,7 @@ const ArchiveCarousel: React.FC<PropType> = (props) => {
 
 	return (
 		<div className="embla">
-			<div className="embla__viewport" ref={emblaRed}>
+			<div className="overflow-hidden rounded-3xl" ref={emblaRed}>
 				<div className="embla__container">
 					{slides.map((index) => (
 						<LazyLoadImage
