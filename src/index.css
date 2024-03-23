@@ -1,7 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=Space+Mono&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+@font-face {
+  font-family: "ProsaBold";
+  src: local("ProsaBold"),
+  url("./assets/fonts/Prosa/prosa-bold.otf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "ProsaMedium";
+  src: local("ProsaMedium"),
+  url("./assets/fonts/Prosa/prosa-medium.otf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "ProsaRegular";
+  src: local("ProsaRegular"),
+  url("./assets/fonts/Prosa/prosa-regular.otf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ProsaLight";
+  src: local("ProsaLight"),
+  url("./assets/fonts/Prosa/prosa-light.otf") format("truetype");
+  font-weight: 300;
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
