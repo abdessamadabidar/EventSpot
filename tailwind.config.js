@@ -22,6 +22,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        'color-blue-primary': '#343fff',
+        'color-blue-dark': '#242edf',
+        'color-blue-darker': '#140046',
         'color-secondary':'#09090B',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -76,6 +79,9 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      blur: {
+        '4xl': '100px',
+      }
     },
   },
   plugins: [require("tailwindcss-animate"), addVariablesForColors,],
